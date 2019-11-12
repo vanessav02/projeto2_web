@@ -24,7 +24,6 @@ mongod [para rodar o servidor do MongoDB]
 
 npm start
 
-********* precisa????:  nodemon app.js
 
 >para ver o banco de dados do mongo:
 mongo [para acessar o shell do mongo]
@@ -32,12 +31,10 @@ show databases; [aparece a database app que eu criei]
 use projetoweb2 [entra na base que eu criei]
 show collections; [para ver as collections(tabelas) cadastradas]
 db.usuarios.find() [exibe o que foi cadastrado]
-
 //nao fazer isso: db.dropDatabase() [apagar um banco de dados existente]
-
 db.usuarios.remove({}) [Apagar conteúdo da coleção, linhas da tabela. Se nenhum atributo for informado todos os dados da coleção são excluídos]
 db.usuarios.insert ({ "nome" : "zaza", "email" : "za@za", "senha" : 459, "nascimento" : 459 })
-
+<
 
 
 ::Deploy na Heroku (serviço de hospedagem de aplicação web )::
@@ -66,6 +63,9 @@ bootstrap: framework html
 mLab: hospedar online bando de dados do mongo
 
 
+
+**mongo db Atlas - não está conectando (antes era mLab)
+>>heroku open
 
 
 
